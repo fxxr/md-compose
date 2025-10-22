@@ -1,0 +1,54 @@
+{
+  "name": "md-include",
+  "description": "A lightweight Node.js utility to include Markdown files into other Markdown documents using [[[path/to/file.md]]] syntax.",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Anatoly Nechaev <https://github.com/fxxr>",
+  "license": "MIT",
+  "homepage": "https://github.com/fxxr/md-include#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxxr/md-include.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxxr/md-include/issues"
+  },
+  "keywords": [
+    "markdown",
+    "include",
+    "markdown include",
+    "markdown fragments",
+    "markdown import",
+    "include markdown files",
+    "markdown preprocessor",
+    "markdown builder",
+    "documentation generator",
+    "static site"
+  ],
+  "module": "./dist/md-include.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/md-include.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepare": "npm run build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "ci": "vitest run && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "~5.8.3",
+    "vite": "7.1.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
+  }
+}
