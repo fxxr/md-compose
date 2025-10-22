@@ -1,23 +1,23 @@
 {
-  "name": "md-include",
+  "name": "md-compose",
   "description": "A lightweight Node.js utility to include Markdown files into other Markdown documents using [[[path/to/file.md]]] syntax.",
   "version": "1.0.0",
   "type": "module",
   "author": "Anatoly Nechaev <https://github.com/fxxr>",
   "license": "MIT",
-  "homepage": "https://github.com/fxxr/md-include#readme",
+  "homepage": "https://github.com/fxxr/md-compose#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxxr/md-include.git"
+    "url": "git+https://github.com/fxxr/md-compose.git"
   },
   "bugs": {
-    "url": "https://github.com/fxxr/md-include/issues"
+    "url": "https://github.com/fxxr/md-compose/issues"
   },
   "keywords": [
     "markdown",
     "include",
-    "markdown include",
     "markdown fragments",
+    "markdown include",
     "markdown import",
     "include markdown files",
     "markdown preprocessor",
@@ -25,11 +25,11 @@
     "documentation generator",
     "static site"
   ],
-  "module": "./dist/md-include.js",
+  "module": "./dist/md-compose.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/md-include.js",
+      "import": "./dist/md-compose.js",
       "types": "./dist/index.d.ts"
     }
   },

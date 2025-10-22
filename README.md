@@ -1,10 +1,11 @@
-# md-include
+# md-compose
 
-[![npm version](https://img.shields.io/npm/v/md-include.svg)](https://www.npmjs.com/package/md-include)
+[![npm version](https://img.shields.io/npm/v/md-compose.svg)](https://www.npmjs.com/package/md-compose)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/fxxr/md-include.svg?style=social)](https://github.com/fxxr/md-include)
+[![GitHub stars](https://img.shields.io/github/stars/fxxr/md-compose.svg?style=social)](https://github.com/fxxr/md-compose)
 
-**md-include** is a lightweight Node.js utility that lets you include Markdown files inside other Markdown files using a simple `[[[path/to/file.md]]]` syntax.  
+**md-compose** is a lightweight Node.js utility to include Markdown files 
+inside other Markdown files using a simple `[[[path/to/file.md]]]` syntax.  
 Perfect for building modular documentation, reusable templates, and large Markdown projects.
 
 ## 🚀 Features
@@ -17,12 +18,12 @@ Perfect for building modular documentation, reusable templates, and large Markdo
 ## Installation
 
 ```bash
-npm install md-include
+npm install md-compose
 ```
 
 ## Usage
 
-Use the special [[[ path/to/file.md ]]] syntax inside a Markdown document to include another Markdown file.
+Use the special `[[[ path/to/file.md ]]]` syntax inside a Markdown document to include another Markdown file.
 
 #### header.md
 
@@ -40,8 +41,6 @@ Follow me on [Github](https://github.com/fxxr)
 
 #### page.md
 
-It's where those two fragments are included.
-
 ```markdown
 [[[ header.md ]]]
 
@@ -54,12 +53,12 @@ It's where those two fragments are included.
 
 ```javascript
 // Async version
-import processIncludes from 'md-include'
+import processIncludes from 'md-compose'
 const result = await processIncludes('page.md')
 console.log(result)
 
 // Sync version
-import {processIncludesSync} from 'md-include'
+import {processIncludesSync} from 'md-compose'
 const resultSync = await processIncludesSync('page.md')
 console.log(resultSync)
 ```
@@ -90,7 +89,7 @@ Follow me on [Github](https://github.com/fxxr)
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!  
-Open an [issue](https://github.com/fxxr/md-include/issues) or 
+Open an [issue](https://github.com/fxxr/md-compose/issues) or 
 submit a pull request.
 
 

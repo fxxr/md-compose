@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.ts',
-      name: 'md-include',
+      name: 'md-compose',
       formats: ['es'],
-      fileName: 'md-include',
+      fileName: 'md-compose',
     },
     rollupOptions: {
       external: [
